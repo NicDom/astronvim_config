@@ -30,6 +30,12 @@ return {
         vim.cmd("%s/" .. word .. "/" .. rp .. "/g")
       end,
     },
+    -- Neotest
+    ["<leader>k"] = { name = "Neotest" },
+    -- ["<leader>kr"] = { "<cmd>lua require('neotest').run.run({env=require('user.configs.neotest-config').get_env()})<cr>", desc =
+    -- "Run" },
+    ["<leader>kr"] = { "<cmd>lua require('neotest').run.run()<cr>", desc = "Run" },
+    ["<leader>kf"] = { "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<cr>", desc = "File" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
