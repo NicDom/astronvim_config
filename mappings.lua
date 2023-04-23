@@ -37,10 +37,11 @@ return {
     ["<leader>kr"] = { "<cmd>lua require('neotest').run.run()<cr>", desc = "Run" },
     ["<leader>kf"] = { "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<cr>", desc = "File" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    ["<esc>"] = { "<C-\\><C-n>", desc = "Exit Terminal" },
   },
 }
