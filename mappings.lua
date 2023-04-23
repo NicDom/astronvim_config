@@ -21,6 +21,15 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>w"] = { "<cmd>w<cr>", desc = "Save" },
+    ["<leader>Q"] = { "<cmd>qa<cr>", desc = "Quit all" },
+    ["<leader>Dr"] = {
+      function()
+        local word = vim.fn.expand "<cword>"
+        local rp = vim.fn.input "Replace with: "
+        vim.cmd("%s/" .. word .. "/" .. rp .. "/g")
+      end,
+    },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
