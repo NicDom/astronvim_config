@@ -30,6 +30,7 @@ return {
         vim.cmd("%s/" .. word .. "/" .. rp .. "/g")
       end,
     },
+    ["<leader>fp"] = { "<cmd>Telescope projects<CR>", desc = "Find Projects" },
     -- Neotest
     ["<leader>k"] = { name = "Neotest" },
     -- ["<leader>kr"] = { "<cmd>lua require('neotest').run.run({env=require('user.configs.neotest-config').get_env()})<cr>", desc =
