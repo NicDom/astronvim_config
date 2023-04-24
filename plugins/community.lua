@@ -9,5 +9,6 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  { import = "astrocommunity.pack.python" }
+  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.project.project-nvim" }
 }
