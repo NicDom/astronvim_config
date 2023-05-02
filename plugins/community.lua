@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.project.project-nvim" }
+  { import = "astrocommunity.project.project-nvim" },
+  { import = "astrocommunity.code-runner.sniprun"}
 }
