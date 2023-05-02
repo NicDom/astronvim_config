@@ -31,12 +31,19 @@ return {
       end,
     },
     ["<leader>fp"] = { "<cmd>Telescope projects<CR>", desc = "Find Projects" },
+    
     -- Neotest
-    ["<leader>k"] = { name = "Neotest" },
-    -- ["<leader>kr"] = { "<cmd>lua require('neotest').run.run({env=require('user.configs.neotest-config').get_env()})<cr>", desc =
-    -- "Run" },
+    ["<leader>k"] = { name = "ﭧ Test" },
     ["<leader>kr"] = { "<cmd>lua require('neotest').run.run()<cr>", desc = "Run" },
     ["<leader>kf"] = { "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<cr>", desc = "File" },
+    
+    -- Code Runner
+    ["<leader>r"] = { name = " Run" },
+    ["<leader>rr"] = { ":RunCode<CR>", desc = " Run" },
+    ["<leader>rf"] = { ":RunFile<CR>", desc = " Run File" },
+    ["<leader>rc"] = { ":RunClose<CR>", desc = " Close" },
+    ["<leader>rp"] = { ":RunProject<CR>", desc = " Run Project" },
+    
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
   },
