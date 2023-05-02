@@ -40,7 +40,7 @@ return {
     -- Code Runner
     ["<leader>r"] = { name = " Run" },
     ["<leader>rr"] = { ":RunCode<CR>", desc = " Run" },
-    ["<leader>rf"] = { ":RunFile<CR>", desc = " Run File" },
+    ["<leader>rf"] = { ":RunFile float<CR>", desc = " Run File" },
     ["<leader>rc"] = { ":RunClose<CR>", desc = " Close" },
     ["<leader>rp"] = { ":RunProject<CR>", desc = " Run Project" },
     
