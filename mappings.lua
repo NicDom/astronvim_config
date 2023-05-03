@@ -43,7 +43,17 @@ return {
     ["<leader>rf"] = { ":RunFile float<CR>", desc = " Run File" },
     ["<leader>rc"] = { ":RunClose<CR>", desc = " Close" },
     ["<leader>rp"] = { ":RunProject<CR>", desc = " Run Project" },
+
+    ["cs"] = { "<Plug>Csurround", desc = "Change Surround" },
+    ["cS"] = { "<Plug>CSurround", desc = "Change Surround backward" },
+    ["ds"] = { "<Plug>Dsurround", desc = "Delete Surround" },
+    ["ys"] = { "<Plug>Ysurround", desc = "Add Surround" },
+    ["yS"] = { "<Plug>YSurround", desc = "Add Surround Indent" },
+    ["yss"] = { "<Plug>Yssurround", desc = "Add Surround Line" },
+    -- ["ySs"] = { "<Plug>YSsurround", desc = "Add Surround" },
+    ["ySS"] = { "<Plug>YSsurround", desc = "Add Surround Line Indent" },
     
+        
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
   },
@@ -52,4 +62,7 @@ return {
     -- ["<esc>"] = false,
     ["<esc>"] = { "<C-\\><C-n>", desc = "Exit Terminal" },
   },
+  x = {
+    ["gS"] = {"<Plug>VgSurround", desc = "Visual Add Surround Indent"},
+  }
 }
