@@ -11,5 +11,7 @@ return {
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.project.project-nvim" },
-  { import = "astrocommunity.code-runner.sniprun"}
+  -- { import = "astrocommunity.code-runner.sniprun"},
+  -- { import = "astrocommunity.utility.transparent-nvim"},
+  { import = "astrocommunity.motion.nvim-surround"}
 }
