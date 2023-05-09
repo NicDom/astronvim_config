@@ -76,7 +76,9 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
-    ["<esc>"] = { "<C-\\><C-n>", desc = "Exit Terminal" },
+    ["<esc>"] = { "<C-\\><C-n>", desc = "Exit Insert Mode" },
+    ["kj"] = { "<C-\\><C-n>", desc = "Exit Insert Mode" },
+    ["jk"] = { "<C-\\><C-n>", desc = "Exit Insert Mode" },
   },
   x = {
     ["gS"] = {"<Plug>VgSurround", desc = "Visual Add Surround Indent"},
