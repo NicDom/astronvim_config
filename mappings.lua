@@ -36,6 +36,13 @@ return {
     ["<leader>k"] = { name = "ﭧ Test" },
     ["<leader>kr"] = { "<cmd>lua require('neotest').run.run()<cr>", desc = "Run" },
     ["<leader>kf"] = { "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<cr>", desc = "File" },
+    ["<leader>kk"] = { "<cmd>lua require('neotest').run.run( { suite = true } )<cr>", desc = "Suite" },
+    ["<leader>ka"] = { ":!pytest -s -vv<cr>", desc = "All" },
+    ["<leader>ks"] = { "<cmd>lua require('neotest').summary.toggle()<cr>", desc = "Summary" },
+    ["<leader>kw"] = { "<cmd>lua require('neotest').watch.watch()<cr>", desc = "Watch" },
+    ["<leader>kn"] = { "<cmd>lua require('neotest').jump.next({ status = 'failed' })<cr>", desc = "Jump Next Fail" },
+    ["<leader>kp"] = { "<cmd>lua require('neotest').jump.prev({ status = 'failed' })<cr>", desc = "Jump Previous Fail" },
+    ["<leader>ko"] = { "<cmd>lua require('neotest').output.open( {enter = true, short = false} )<cr>", desc = "Output" },
     
     -- Code Runner
     ["<leader>r"] = { name = " Run" },
