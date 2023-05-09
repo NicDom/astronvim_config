@@ -59,6 +59,17 @@ return {
     ["yzz"] = { "<Plug>Yssurround", desc = "Add Surround Line" },
     -- ["ySs"] = { "<Plug>YSsurround", desc = "Add Surround" },
     ["yZZ"] = { "<Plug>YSsurround", desc = "Add Surround Line Indent" },
+
+    --Motion
+    ["J"] = { "<C-d>", desc = "Scroll Down"},
+    ["K"] = { "<C-u>", desc = "Scroll Up"},
+    ["<Tab>"] = { ":bnext<cr>", desc = "Next Buffer"},
+    ["<S-Tab>"] = { ":bprev<cr>", desc = "Previous Buffer"},
+    ["ö"] = { ":wincmd w<cr>", desc = "Go window right"},
+    -- ["<leader>s"] = { name = "Split Window"},
+    -- ["<leader>ss"] = {":vsplit<cr>", desc = "Vertically"},
+    -- ["<leader>sh"] = {":split<cr>", desc = "Horizontally"},
+       
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
   },
