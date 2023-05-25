@@ -15,6 +15,7 @@ return {
   -- { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.project.project-nvim" },
   -- { import = "astrocommunity.code-runner.sniprun"},
-  { import = "astrocommunity.utility.transparent-nvim"},
-  { import = "astrocommunity.motion.nvim-surround"}
+  { import = "astrocommunity.utility.transparent-nvim" },
+  { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.indent.indent-tools-nvim" },
 }
