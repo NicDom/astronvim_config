@@ -11,10 +11,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
-          require("astronvim.utils.buffer").close(
-            bufnr)
-        end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -31,7 +30,7 @@ return {
       end,
     },
     ["<leader>fp"] = { "<cmd>Telescope projects<CR>", desc = "Find Projects" },
-    
+
     -- Neotest
     ["<leader>k"] = { name = "ﭧ Test" },
     ["<leader>kr"] = { "<cmd>lua require('neotest').run.run()<cr>", desc = "Run" },
@@ -43,7 +42,7 @@ return {
     ["<leader>kn"] = { "<cmd>lua require('neotest').jump.next({ status = 'failed' })<cr>", desc = "Jump Next Fail" },
     ["<leader>kp"] = { "<cmd>lua require('neotest').jump.prev({ status = 'failed' })<cr>", desc = "Jump Previous Fail" },
     ["<leader>ko"] = { "<cmd>lua require('neotest').output.open( {enter = true, short = false} )<cr>", desc = "Output" },
-    
+
     -- Code Runner
     ["<leader>r"] = { name = " Run" },
     ["<leader>rr"] = { ":RunCode<CR>", desc = " Run" },
@@ -61,15 +60,15 @@ return {
     ["yZZ"] = { "<Plug>YSsurround", desc = "Add Surround Line Indent" },
 
     --Motion
-    ["J"] = { "<C-d>", desc = "Scroll Down"},
-    ["K"] = { "<C-u>", desc = "Scroll Up"},
-    ["<Tab>"] = { ":bnext<cr>", desc = "Next Buffer"},
-    ["<S-Tab>"] = { ":bprev<cr>", desc = "Previous Buffer"},
-    ["ö"] = { ":wincmd w<cr>", desc = "Go window right"},
+    ["J"] = { "<C-d>", desc = "Scroll Down" },
+    ["U"] = { "<C-u>", desc = "Scroll Up" },
+    ["<Tab>"] = { ":bnext<cr>", desc = "Next Buffer" },
+    ["<S-Tab>"] = { ":bprev<cr>", desc = "Previous Buffer" },
+    ["ö"] = { ":wincmd w<cr>", desc = "Go window right" },
     -- ["<leader>s"] = { name = "Split Window"},
     -- ["<leader>ss"] = {":vsplit<cr>", desc = "Vertically"},
     -- ["<leader>sh"] = {":split<cr>", desc = "Horizontally"},
-       
+
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
   },
@@ -81,6 +80,6 @@ return {
     ["jk"] = { "<C-\\><C-n>", desc = "Exit Insert Mode" },
   },
   x = {
-    ["gS"] = {"<Plug>VgSurround", desc = "Visual Add Surround Indent"},
-  }
+    ["gS"] = { "<Plug>VgSurround", desc = "Visual Add Surround Indent" },
+  },
 }
