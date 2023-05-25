@@ -66,6 +66,7 @@ return {
     ["<Tab>"] = { ":bnext<cr>", desc = "Next Buffer" },
     ["<S-Tab>"] = { ":bprev<cr>", desc = "Previous Buffer" },
     ["ö"] = { ":wincmd w<cr>", desc = "Go window right" },
+    ["M"] = { "/", desc = "Search" },
     -- ["<leader>s"] = { name = "Split Window"},
     -- ["<leader>ss"] = {":vsplit<cr>", desc = "Vertically"},
     -- ["<leader>sh"] = {":split<cr>", desc = "Horizontally"},
