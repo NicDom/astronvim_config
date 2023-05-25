@@ -1,3 +1,4 @@
+local utils = require "astronvim.utils"
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
@@ -18,4 +19,11 @@ return {
   { import = "astrocommunity.utility.transparent-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.indent.indent-tools-nvim" },
+  -- {
+  --   "jay-babu/mason-nvim-dap.nvim",
+  --   opts = function(_, opts)
+  --     opts.ensure_installed =
+  --         utils.list_insert_unique(opts.ensure_installed, { "isort", "black", "pylint", "pydocstyle", "pyupgrade" })
+  --   end,
+  -- },
 }
