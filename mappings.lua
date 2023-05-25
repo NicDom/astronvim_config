@@ -49,6 +49,7 @@ return {
     ["<leader>rf"] = { ":RunFile float<CR>", desc = " Run File" },
     ["<leader>rc"] = { ":RunClose<CR>", desc = " Close" },
     ["<leader>rp"] = { ":RunProject<CR>", desc = " Run Project" },
+    ["<leader>rt"] = { ":RunFile toggleterm<CR>", desc = " Run File Terminal" },
 
     ["cz"] = { "<Plug>Csurround", desc = "Change Surround" },
     ["cZ"] = { "<Plug>CSurround", desc = "Change Surround backward" },
