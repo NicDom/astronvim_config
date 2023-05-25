@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.lua" },
+  -- { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.project.project-nvim" },
   -- { import = "astrocommunity.code-runner.sniprun"},
   { import = "astrocommunity.utility.transparent-nvim"},
