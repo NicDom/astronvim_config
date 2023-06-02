@@ -51,15 +51,6 @@ return {
     ["<leader>rp"] = { ":RunProject<CR>", desc = " Run Project" },
     ["<leader>rt"] = { ":RunFile toggleterm<CR>", desc = " Run File Terminal" },
 
-    ["cz"] = { "<Plug>Csurround", desc = "Change Surround" },
-    ["cZ"] = { "<Plug>CSurround", desc = "Change Surround backward" },
-    ["dz"] = { "<Plug>Dsurround", desc = "Delete Surround" },
-    ["yz"] = { "<Plug>Ysurround", desc = "Add Surround" },
-    ["yZ"] = { "<Plug>YSurround", desc = "Add Surround Indent" },
-    ["yzz"] = { "<Plug>Yssurround", desc = "Add Surround Line" },
-    -- ["ySs"] = { "<Plug>YSsurround", desc = "Add Surround" },
-    ["yZZ"] = { "<Plug>YSsurround", desc = "Add Surround Line Indent" },
-
     --Motion
     ["J"] = { "<C-d>", desc = "Scroll Down" },
     ["U"] = { "<C-u>", desc = "Scroll Up" },
