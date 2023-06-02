@@ -28,6 +28,10 @@ return {
   },
   { import = "astrocommunity.indent.indent-tools-nvim" },
   { import = "astrocommunity.lsp.inc-rename" },
+  {
+    "linux-cultist/venv-selector.nvim",
+    build = "pip install --user -U ruff-lsp",
+  },
   -- {
   --   "jay-babu/mason-nvim-dap.nvim",
   --   opts = function(_, opts)
