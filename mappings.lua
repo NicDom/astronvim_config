@@ -36,7 +36,7 @@ return {
     ["<leader>kr"] = { "<cmd>lua require('neotest').run.run()<cr>", desc = "Run" },
     ["<leader>kf"] = { "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<cr>", desc = "File" },
     ["<leader>kk"] = { "<cmd>lua require('neotest').run.run( { suite = true } )<cr>", desc = "Suite" },
-    ["<leader>ka"] = { ":!pytest -s -vv<cr>", desc = "All" },
+    ["<leader>ka"] = { ":wa<cr>:TermExec cmd='pytest -s -vv'<cr>", desc = "All" },
     ["<leader>ks"] = { "<cmd>lua require('neotest').summary.toggle()<cr>", desc = "Summary" },
     ["<leader>kw"] = { "<cmd>lua require('neotest').watch.watch()<cr>", desc = "Watch" },
     ["<leader>kn"] = { "<cmd>lua require('neotest').jump.next({ status = 'failed' })<cr>", desc = "Jump Next Fail" },
