@@ -18,6 +18,14 @@ return {
   -- { import = "astrocommunity.code-runner.sniprun"},
   { import = "astrocommunity.utility.transparent-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
+  {
+    "kylechui/nvim-surround",
+    opts = {
+      keymaps = {
+        visual = "m",
+      },
+    },
+  },
   { import = "astrocommunity.indent.indent-tools-nvim" },
   -- {
   --   "jay-babu/mason-nvim-dap.nvim",
