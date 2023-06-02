@@ -27,6 +27,7 @@ return {
     },
   },
   { import = "astrocommunity.indent.indent-tools-nvim" },
+  { import = "astrocommunity.lsp.inc-rename" },
   -- {
   --   "jay-babu/mason-nvim-dap.nvim",
   --   opts = function(_, opts)
