@@ -33,10 +33,10 @@ return {
     build = "pip install --user -U ruff-lsp",
   },
   -- {
-  --   "jay-babu/mason-nvim-dap.nvim",
-  --   opts = function(_, opts)
-  --     opts.ensure_installed =
-  --         utils.list_insert_unique(opts.ensure_installed, { "isort", "black", "pylint", "pydocstyle", "pyupgrade" })
-  --   end,
+  -- "jay-babu/mason-nvim-dap.nvim",
+  -- opts = function(_, opts)
+  -- opts.ensure_installed =
+  -- utils.list_insert_unique(opts.ensure_installed, { "isort", "black", "pylint", "pydocstyle", "pyupgrade" })
+  -- end,
   -- },
 }
