@@ -8,6 +8,7 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.nvim-surround" },
   -- { import = "astrocommunity.motion.hop-nvim" },
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
@@ -18,11 +19,15 @@ return {
   { import = "astrocommunity.project.project-nvim" },
   -- { import = "astrocommunity.code-runner.sniprun"},
   { import = "astrocommunity.utility.transparent-nvim" },
-  { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.indent.indent-tools-nvim" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 
+  --
+  -- Exra Settings
+  --
+
+  --S in visual mode to surround collides with leap
   {
     "kylechui/nvim-surround",
     opts = {
@@ -31,8 +36,7 @@ return {
       },
     },
   },
-  { import = "astrocommunity.indent.indent-tools-nvim" },
-  { import = "astrocommunity.lsp.inc-rename" },
+  -- install ruff-lsp when installing venv-selector
   {
     "linux-cultist/venv-selector.nvim",
     build = "pip install --user -U ruff-lsp",
