@@ -20,6 +20,7 @@ return {
   { import = "astrocommunity.utility.transparent-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   {
     "kylechui/nvim-surround",
     opts = {
@@ -33,6 +34,13 @@ return {
   {
     "linux-cultist/venv-selector.nvim",
     build = "pip install --user -U ruff-lsp",
+  },
+  -- enable copilot for markdown
+  {
+    "zbirenbaum/copilot-cmp",
+    opts = {
+      filetypes = { "markdown" },
+    },
   },
   -- {
   -- "jay-babu/mason-nvim-dap.nvim",
