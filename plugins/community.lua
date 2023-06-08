@@ -19,6 +19,7 @@ return {
   -- { import = "astrocommunity.code-runner.sniprun"},
   { import = "astrocommunity.utility.transparent-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.lsp.inc-rename-nvim" },
   {
     "kylechui/nvim-surround",
     opts = {
