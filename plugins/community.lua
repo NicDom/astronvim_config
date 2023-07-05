@@ -22,6 +22,8 @@ return {
   { import = "astrocommunity.indent.indent-tools-nvim" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  -- { import = "astrocommunity.utility.noice-nvim" },
+  -- { import = "astrocommunity.split-and-window.edgy-nvim" },
 
   --
   -- Exra Settings
