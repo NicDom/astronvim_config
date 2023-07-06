@@ -19,7 +19,7 @@ return {
   { import = "astrocommunity.project.project-nvim" },
   -- { import = "astrocommunity.code-runner.sniprun"},
   { import = "astrocommunity.utility.transparent-nvim" },
-  { import = "astrocommunity.indent.indent-tools-nvim" },
+  -- { import = "astrocommunity.indent.indent-tools-nvim" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   -- { import = "astrocommunity.utility.noice-nvim" },
