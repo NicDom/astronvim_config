@@ -31,7 +31,22 @@ return {
   -- Exra Settings
   --
 
-  --S in visual mode to surround collides with leap
+  -- Allow f,F,t,T to be used with labels
+
+  {
+    "folke/flash.nvim",
+    config = function()
+      require("flash").setup {
+        modes = {
+          char = {
+            enabled = false,
+          },
+        },
+      }
+    end,
+  },
+
+  --S in visual mode to surround collides with flash
   {
     "kylechui/nvim-surround",
     opts = {
