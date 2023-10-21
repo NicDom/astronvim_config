@@ -64,6 +64,30 @@ return {
 
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+
+    -- toggles
+    ["<leader>uP"] = {
+      function()
+        local status = "online"
+        local cp_client_ok, cp_client = pcall(require, "copilot.client")
+        if not cp_client_ok then
+          status = "offline"
+          return
+        end
+        local client = cp_client.get()
+        if not client then
+          status = "offline"
+          return
+        end
+        if status == "offline" then
+          require("copilot.command").enable()
+        else
+          require("copilot.command").disable()
+        end
+      end,
+      -- this is some
+      desc = "Toggle Copilot",
+    },
     ["<leader>BB"] = { "V~<cmd> lua require('comment-box').albox()<cr>v", desc = "Left aligned box and text" },
   },
   v = {
