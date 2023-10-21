@@ -14,6 +14,7 @@ return {
   -- { import = "astrocommunity.motion.hop-nvim" },
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.editing-support.comment-box-nvim" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.lua" },
