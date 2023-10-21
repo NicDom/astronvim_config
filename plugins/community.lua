@@ -20,7 +20,7 @@ return {
   -- { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.project.project-nvim" },
   -- { import = "astrocommunity.code-runner.sniprun"},
-  { import = "astrocommunity.utility.transparent-nvim" },
+  { import = "astrocommunity.color.transparent-nvim" },
   -- { import = "astrocommunity.indent.indent-tools-nvim" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
